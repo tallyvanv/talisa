@@ -113,23 +113,34 @@ footer {
   	padding-top: 10px;
 }
 
-#slider:onhover {
+#slider:hover {
 	animation-name: goodbye;
 	animation-duration: 3s;
 }
 
-@key-frames goodbye {
+@keyframes goodbye {
 	0% {
-		opacity:1
+	}
+	10% {
+		filter: hue-rotate(150deg);
 	}
 	25% {
-		opacity: 0.75
+		filter: hue-rotate(270deg);
+	}
+	40% {
+		filter: hue-rotate(100deg);
 	}
 	50% {
-		opacity: 0.5
+		filter: hue-rotate(150deg);
+	}
+	60% {
+		filter: hue-rotate(90deg);
 	}
 	75% {
-		opacity:0.25
+		filter: invert(100%);
+	}
+	90% {
+		filter: invert(40%);
 	}
 	100% {
 		opacity:0
